@@ -14,34 +14,33 @@
 // console.log(smallestMissingPositive(array3)); // Output: 1
 
 const smallestMissingPositive = (array) => {
-    // step 1: remove negative numbers and 0
-    array = array.filter(num => num > 0);
+  // Step 1: remove negative numbers and 0
+  array = array.filter((num) => num > 0)
 
-    // step 2: mark the element at index i as negative if array[i] is present in the array
-    for (let i = 0; i < array.length; i++) {
-        let index = Math.abs(array[i]) - 1;
-        if (index < array.length && array[index] > 0) {
-            array[index] = -array[index];
-        }
+  // Step 2: mark the element at index i as negative if array[i] is present in the array
+  for (let i = 0; i < array.length; i++) {
+    let index = Math.abs(array[i]) - 1
+    if (index < array.length && array[index] > 0) {
+      array[index] = -array[index]
     }
+  }
 
-    // step 3: find the first index i that has a positive value
-    for (let i = 0; i < array.length; i++) {
-        if (array[i] > 0) {
-            return i + 1;
-        }
+  // Step 3: find the first index i that has a positive value
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > 0) {
+      return i + 1
     }
+  }
 
-    // if no positive index is found, the smallest missing positive is array.length + 1
-    return array.length + 1;
+  // if no positive index is found, the smallest missing positive is array.length + 1
+  return array.length + 1
 }
 
+const array = [3, 4, -1, 1]
+console.log(smallestMissingPositive(array)) // Output: 2
 
-const array = [3, 4, -1, 1];
-console.log(smallestMissingPositive(array)); // Output: 2
+const array2 = [1, 2, 0]
+console.log(smallestMissingPositive(array2)) // Output: 3
 
-const array2 = [1, 2, 0];
-console.log(smallestMissingPositive(array2)); // Output: 3
-
-const array3 = [-3, -2, -1, 0];
-console.log(smallestMissingPositive(array3)); // Output: 1
+const array3 = [-3, -2, -1, 0]
+console.log(smallestMissingPositive(array3)) // Output: 1
