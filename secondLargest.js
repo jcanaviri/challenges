@@ -21,7 +21,7 @@ const secondLargest = (array) => {
     if (array[i] > max) {
       secondMax = max
       max = array[i]
-    } else if (array[i] > secondMax && array[i] < max) {
+    } else if (array[i] > secondMax && array[i] !== max) {
       secondMax = array[i]
     }
   }
