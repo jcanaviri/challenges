@@ -1,25 +1,28 @@
-// Write a function called uniqueElements that takes an array as input and returns a new array with all duplicate elements removed.
+// Write a function called uniqueElements that takes an array as input
+// and returns a new array with all duplicate elements removed.
 
 // For example:
-
 // uniqueElements([1, 2, 2, 3, 4, 4, 5]); // returns [1, 2, 3, 4, 5]
 // uniqueElements(['apple', 'banana', 'orange', 'banana']); // returns ['apple', 'banana', 'orange']
 
 const uniqueElements = (array) => {
-  let withoutDuplicates = []
+  // Declare an empty array for the result
+  let result = []
 
+  // Go throught all the items verifying if the element is not in the result
+  // and pushing it only if there is not present previusly
   for (let item of array) {
-    if (!withoutDuplicates.includes(item)) {
-      withoutDuplicates.push(item)
+    if (!result.includes(item)) {
+      result.push(item)
     }
   }
 
-  return withoutDuplicates
+  return result
 }
 
 const uniqueElements2 = (array) => {
-  const unique = [...new Set(array)]
-  return unique
+  // Remove the duplicated elements with Set
+  return [...new Set(array)]
 }
 
 console.log(uniqueElements([1, 2, 2, 3, 4, 4, 5])) // returns [1, 2, 3, 4, 5]

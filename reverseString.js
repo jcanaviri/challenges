@@ -1,7 +1,6 @@
 // Write a function called reverseString that takes a string as input and returns a new string with the characters in reverse order.
 
 // For example:
-
 // reverseString('hello'); // returns 'olleh'
 // reverseString('world'); // returns 'dlrow'
 

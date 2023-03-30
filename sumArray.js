@@ -2,9 +2,9 @@
 // the sum of all the numbers in the array.
 
 // For example:
-
 // sumArray([1, 2, 3, 4, 5]); // returns 15
 // sumArray([-5, 10, 4, 8]); // returns 17
+
 const sumArray = (array) => {
   // The first argument to reduce() is a function that takes two arguments:
   // an accumulator (a) and the current element of the array (b).
