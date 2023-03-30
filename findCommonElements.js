@@ -13,7 +13,7 @@ const findCommonElements = (arr1, arr2) => {
   for (let i = 0; i < arr1.length; i++) {
     // if the current item in arr1 is present in the another arr2
     // push a new value in the result list.
-    if (arr2.includes(arr[i])) result.push(item)
+    if (arr2.includes(arr1[i])) result.push(arr1[i])
   }
 
   // Return the final result with the common elements
