@@ -1,5 +1,3 @@
-// Challenge: Flatten a Nested Array
-
 // Write a function flattenArray(nestedArray) that takes in an array of nested arrays of integers as an argument and returns a flattened array. The flattened array should contain all the integers from the nested arrays, in the order they appear.
 
 // For example:

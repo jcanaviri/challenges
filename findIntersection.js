@@ -1,5 +1,3 @@
-// Challenge: Find the Intersection
-
 // Write a function findIntersection(arr1, arr2) that takes in two arrays of integers
 // as arguments and returns an array containing their intersection. The intersection
 // is defined as the set of elements that are present in both arrays.
