@@ -1,4 +1,4 @@
-// Write a function that takes in two arrays of integers,
+// Write a function that takes the common elements in two arrays of integers,
 // and returns an array containing all of the integers that are common to both input arrays.
 
 // For example:
